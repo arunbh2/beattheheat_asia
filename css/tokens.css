@@ -1,0 +1,198 @@
+/* 
+ * BeatTheHeat.Asia Design System Tokens
+ * Core design variables for brand consistency
+ */
+
+/* ===== TYPOGRAPHY ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* Font Families */
+  --font-primary: 'Poppins', sans-serif;    /* Headings */
+  --font-secondary: 'Inter', sans-serif;    /* Body text */
+  
+  /* Font Sizes - Desktop */
+  --text-h1-desktop: 48px;
+  --text-h2-desktop: 36px;
+  --text-h3-desktop: 28px;
+  --text-body-desktop: 18px;
+  --text-caption-desktop: 16px;
+  
+  /* Font Sizes - Mobile */
+  --text-h1-mobile: 32px;
+  --text-h2-mobile: 28px;
+  --text-h3-mobile: 22px;
+  --text-body-mobile: 16px;
+  --text-caption-mobile: 14px;
+  
+  /* Font Weights */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* ===== COLOR PALETTE ===== */
+  
+  /* Primary Colors */
+  --color-white: #FFFFFF;
+  --color-midnight-navy: #12263A;    /* Trust: Primary text, backgrounds */
+  --color-heat-red: #FF5A36;         /* Urgency: Critical alerts, CTAs */
+  --color-warning-amber: #FFBC40;    /* Attention: Secondary alerts, highlights */
+  --color-cool-teal: #00A4CC;        /* Hope: Links, success states, solutions */
+  --color-leaf-green: #2ECC71;       /* Success: Positive notifications, accessibility focus */
+  
+  /* Background & Surface Colors */
+  --color-bg-primary: var(--color-white);
+  --color-bg-section: #F8F9FA;       /* Light section backgrounds */
+  --color-bg-card: var(--color-white);
+  --color-bg-overlay: rgba(18, 38, 58, 0.9);
+  
+  /* Text Colors */
+  --color-text-primary: var(--color-midnight-navy);
+  --color-text-secondary: #5A6B7D;
+  --color-text-muted: #8B95A1;
+  --color-text-inverse: var(--color-white);
+  --color-text-link: var(--color-cool-teal);
+  --color-text-danger: var(--color-heat-red);
+  
+  /* Border Colors */
+  --color-border-light: #E2E8F0;
+  --color-border-medium: #CBD5E0;
+  --color-border-strong: var(--color-midnight-navy);
+
+  /* ===== SPACING SYSTEM ===== */
+  
+  /* Base spacing unit: 8px */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+  
+  /* Layout Spacing */
+  --container-padding: var(--space-4);
+  --section-padding-y: var(--space-20);
+  --card-padding: var(--space-6);
+  --gap-small: var(--space-4);
+  --gap-medium: var(--space-8);
+  --gap-large: var(--space-12);
+
+  /* ===== LAYOUT SYSTEM ===== */
+  
+  /* Container Widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+  
+  /* Grid System */
+  --grid-columns: 12;
+  --grid-gap: var(--space-6);
+  
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* ===== COMPONENT TOKENS ===== */
+  
+  /* Buttons */
+  --btn-border-radius: 8px;
+  --btn-padding-x: var(--space-6);
+  --btn-padding-y: var(--space-3);
+  --btn-font-weight: var(--font-semibold);
+  --btn-transition: all 0.2s ease-in-out;
+  
+  /* Cards */
+  --card-border-radius: 12px;
+  --card-border: 1px solid var(--color-border-light);
+  --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --card-shadow-hover: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  /* Forms */
+  --input-border-radius: 6px;
+  --input-padding: var(--space-3) var(--space-4);
+  --input-border: 1px solid var(--color-border-medium);
+  --input-focus-ring: 0 0 0 3px rgba(0, 164, 204, 0.1);
+  
+  /* Navigation */
+  --nav-height: 80px;
+  --nav-link-padding: var(--space-4) var(--space-5);
+  
+  /* Emergency Ribbon */
+  --ribbon-height: 48px;
+  --ribbon-bg: var(--color-heat-red);
+  --ribbon-text: var(--color-white);
+  
+  /* Animations */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+  
+  /* Z-Index Scale */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
+
+/* ===== RESPONSIVE TYPOGRAPHY ===== */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: var(--space-4);
+    --section-padding-y: var(--space-12);
+    --grid-gap: var(--space-4);
+  }
+}
+
+/* ===== ACCESSIBILITY TOKENS ===== */
+:root {
+  /* Focus States */
+  --focus-ring-color: var(--color-cool-teal);
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --focus-ring: var(--focus-ring-width) solid var(--focus-ring-color);
+  
+  /* High Contrast Mode Support */
+  --color-accent-high-contrast: var(--color-heat-red);
+  --color-text-high-contrast: var(--color-midnight-navy);
+  
+  /* Motion Preferences */
+  --animation-duration: var(--transition-normal);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --animation-duration: 0ms;
+    --transition-fast: 0ms;
+    --transition-normal: 0ms;
+    --transition-slow: 0ms;
+  }
+}
+
+/* ===== DARK MODE PREPARATION ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Future dark mode tokens can be added here */
+    /* Currently maintaining light theme as per brand guidelines */
+  }
+}
