@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect catalytic capital to credible, scalable heat resilience projects. Access government schemes, philanthropic funding, and innovative financial mechanisms for heat adaptation.">
+    <meta name="keywords" content="heat resilience funding, climate adaptation finance, SDMF, SDRF, parametric insurance, blended finance, catalytic capital">
+    <title>Fund Heat Hub | Connecting Capital to Heat Resilience | BeatTheHeat.Asia</title>
+    
+    <!-- External Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/tokens.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+</head>
+<body>
+    <!-- Heat Emergency Ribbon -->
+    <div class="heat-emergency-ribbon" id="heatRibbon">
+        <div class="ribbon-content">
+            <span class="ribbon-icon">🌡️</span>
+            <span class="ribbon-text"><strong>Live Heat Alert:</strong> Extreme heat conditions affecting 15+ districts. Access emergency resources immediately.</span>
+            <button class="ribbon-close" onclick="closeRibbon()" aria-label="Close heat alert">&times;</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="/index.html">
+                    <img src="/assets/images/logo.svg" alt="BeatTheHeat.Asia" class="logo">
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="/crisis.html" class="nav-link">Crisis Hub</a>
+                <a href="/knowledge.html" class="nav-link">Knowledge</a>
+                <a href="/fund.html" class="nav-link active">Fund Heat</a>
+                <a href="/policy.html" class="nav-link">Policy Lab</a>
+                <a href="/community.html" class="nav-link">Community</a>
+                <a href="/events.html" class="nav-link">Events</a>
+                <a href="/coalition.html" class="nav-link cta-link">Join Coalition</a>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-fund">
+        <div class="hero-content">
+            <div class="hero-badge">💰 SHIFT Framework</div>
+            <h1 class="hero-title">Fund Heat Resilience</h1>
+            <p class="hero-subtitle">
+                Connect catalytic capital to credible, scalable heat resilience projects. 
+                From disaster mitigation funds to innovative financing mechanisms, 
+                build the financial architecture for a cooler, more equitable future.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">₹32,031 crore</div>
+                    <div class="stat-label">SDMF allocation (2021-26)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">$782.4M</div>
+                    <div class="stat-label">GCF India allocation</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">$2.5T</div>
+                    <div class="stat-label">Climate finance gap by 2030</div>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#funding-pathways" class="btn btn-primary">Explore Funding Pathways</a>
+                <a href="#submit-project" class="btn btn-secondary">Submit Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financing Pathways Section -->
+    <section class="section" id="funding-pathways">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Financing Pathways for Heat Resilience</h2>
+                <p class="section-subtitle">
+                    Navigate the diverse landscape of funding mechanisms—from government schemes 
+                    to innovative blended finance—tailored to different project scales and stakeholder types.
+                </p>
+            </div>
+
+            <div class="funding-categories">
+                <!-- Government Funding -->
+                <div class="funding-category">
+                    <div class="category-header">
+                        <div class="category-icon">🏛️</div>
+                        <h3 class="category-title">Government Funding</h3>
+                        <p class="category-description">Access disaster mitigation and national climate schemes</p>
+                    </div>
+                    
+                    <div class="funding-cards">
+                        <div class="funding-card">
+                            <div class="card-header">
+                                <h4 class="card-title">State Disaster Mitigation Fund (SDMF)</h4>
+                                <div class="card-badge active">Active</div>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">
+                                    Heatwaves now eligible for project-based funding. National allocation of ₹32,031 crore for FY 2021-26.
+                                </p>
+                                <div class="card-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Funding Type:</span>
+                                        <span class="detail-value">Project-based grants</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Eligible Projects:</span>
+                                        <span class="detail-value">Cooling shelters, early warning systems, nature-based solutions</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Application Through:</span>
+                                        <span class="detail-value">State Disaster Management Authorities</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="card-action">Access Guidelines →</a>
+                            </div>
+                        </div>
+
+                        <div class="funding-card">
+                            <div class="card-header">
+                                <h4 class="card-title">State Disaster Response Fund (SDRF)</h4>
+                                <div class="card-badge active">State-Specific</div>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">
+                                    Additional 10% funding for states that notify heatwaves as state-specific disasters.
+                                </p>
+                                <div class="card-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Success Stories:</span>
+                                        <span class="detail-value">Maharashtra, Tamil Nadu, Andhra Pradesh, Telangana</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Use Cases:</span>
+                                        <span class="detail-value">Ex-gratia payments, agricultural losses, capacity building</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="card-action">View State Notifications →</a>
+                            </div>
+                        </div>
+
+                        <div class="funding-card">
+                            <div class="card-header">
+                                <h4 class="card-title">Green Climate Fund (GCF)</h4>
+                                <div class="card-badge active">International</div>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">
+                                    $782.4M allocated to India across 11 projects for climate adaptation and mitigation.
+                                </p>
+                                <div class="card-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Recent Projects:</span>
+                                        <span class="detail-value">FMAP for MSMEs ($215.6M), Coastal Resilience ($43.4M)</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="card-action">Explore GCF Portfolio →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Philanthropic Funding -->
+                <div class="funding-category">
+                    <div class="category-header">
+                        <div class="category-icon">💝</div>
+                        <h3 class="category-title">Philanthropic Capital</h3>
+                        <p class="category-description">Strategic philanthropic interventions and catalytic funding</p>
+                    </div>
+                    
+                    <div class="funding-cards">
+                        <div class="funding-card">
+                            <div class="card-header">
+                                <h4 class="card-title">The Rockefeller Foundation</h4>
+                                <div class="card-badge active">Big Bets</div>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">
+                                    Asia-Pacific fellowship focusing on climate adaptation and developing heat-resilient infrastructure.
+                                </p>
+                                <div class="card-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Focus Areas:</span>
+                                        <span class="detail-value">Blended finance, heatwave defenses, catalytic climate finance</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Programs:</span>
+                                        <span class="detail-value">Asia Climate Solutions Design Grant Window</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="card-action">Apply for Fellowship →</a>
+                            </div>
+                        </div>
+
+                        <div class="funding-card">
+                            <div class="card-header">
+                                <h4 class="card-title">Tata Trusts / India Climate Collaborative</h4>
+                                <div class="card-badge active">National</div>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">
+                                    Platform to scale philanthropic efforts for climate action, prioritizing vulnerable communities.
+                                </p>
+                                <div class="card-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Mission:</span>
+                                        <span class="detail-value">Address funding gaps and build community resilience</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="card-action">Connect with ICC →</a>
+                            </div>
+                        </div>
+
+                        <div class="funding-card">
+                            <div class="card-header">
+                                <h4 class="card-title">Shakti Sustainable Energy Foundation</h4>
+                                <div class="card-badge active">Climate Finance</div>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">
+                                    Enhancing capital flows for climate adaptation through Green Indian Financial System Initiative.
+                                </p>
+                                <div class="card-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Initiative:</span>
+                                        <span class="detail-value">Indian Taxonomy for Sustainable Activities</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="card-action">Explore Programs →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Innovative Finance -->
+                <div class="funding-category">
+                    <div class="category-header">
+                        <div class="category-icon">⚡</div>
+                        <h3 class="category-title">Innovative Financial Mechanisms</h3>
+                        <p class="category-description">Blended finance, parametric insurance, and outcome-based funding</p>
+                    </div>
+                    
+                    <div class="funding-cards">
+                        <div class="funding-card">
+                            <div class="card-header">
+                                <h4 class="card-title">Parametric Heat Insurance</h4>
+                                <div class="card-badge pilot">Pilot Ready</div>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">
+                                    Pre-defined temperature threshold-based insurance for rapid payout following extreme heat events.
+                                </p>
+                                <div class="card-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Success Story:</span>
+                                        <span class="detail-value">SEWA Ahmedabad - 46,000 women covered</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Model:</span>
+                                        <span class="detail-value">Nagaland SDMA - ₹70 lakh premium for ₹5 crore coverage</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="card-action">Design Insurance Product →</a>
+                            </div>
+                        </div>
+
+                        <div class="funding-card">
+                            <div class="card-header">
+                                <h4 class="card-title">Green Growth Equity Fund (GGEF)</h4>
+                                <div class="card-badge active">Blended Finance</div>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">
+                                    Public-private partnership between NIIF and UK government, attracting private equity to green sectors.
+                                </p>
+                                <div class="card-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Sectors:</span>
+                                        <span class="detail-value">Waste management, distributed solar, green infrastructure</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Mechanism:</span>
+                                        <span class="detail-value">First-loss capital, credit guarantees, concessional debt</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="card-action">Submit Investment Proposal →</a>
+                            </div>
+                        </div>
+
+                        <div class="funding-card">
+                            <div class="card-header">
+                                <h4 class="card-title">Power Finance Corporation (PFC) Green Window</h4>
+                                <div class="card-badge development">In Development</div>
+                            </div>
+                            <div class="card-content">
+                                <p class="card-description">
+                                    Green and Transition Finance Window using green bonds and sustainability-linked instruments.
+                                </p>
+                                <div class="card-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Instruments:</span>
+                                        <span class="detail-value">Green bonds, transition bonds, loan guarantees</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Partners:</span>
+                                        <span class="detail-value">MDBs, sovereign funds, impact investors</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="card-action">Stay Updated →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Funding Opportunities -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Live Funding Opportunities</h2>
+                <p class="section-subtitle">
+                    Current grants and funding calls with application deadlines. Updated weekly.
+                </p>
+            </div>
+
+            <div class="opportunities-table">
+                <table class="funding-table">
+                    <thead>
+                        <tr>
+                            <th>Funding Opportunity</th>
+                            <th>Organization</th>
+                            <th>Amount</th>
+                            <th>Deadline</th>
+                            <th>Eligibility</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="opportunity-name">Climate Smart Livelihoods</div>
+                                <div class="opportunity-type">SBIF LEAP Program</div>
+                            </td>
+                            <td>SBI Foundation</td>
+                            <td>Varies</td>
+                            <td class="deadline urgent">June 14, 2025</td>
+                            <td>NGOs in India</td>
+                            <td><a href="#" class="btn-small btn-primary">Apply Now</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="opportunity-name">Gender Just Climate Solutions</div>
+                                <div class="opportunity-type">Awards Program</div>
+                            </td>
+                            <td>Women & Gender Constituency</td>
+                            <td>$10,000 - $50,000</td>
+                            <td class="deadline moderate">July 13, 2025</td>
+                            <td>Global, gender-focused</td>
+                            <td><a href="#" class="btn-small btn-primary">Apply Now</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="opportunity-name">Japan Water Forum Fund</div>
+                                <div class="opportunity-type">Water & Climate Grant</div>
+                            </td>
+                            <td>Japan Water Forum</td>
+                            <td>$25,000 - $100,000</td>
+                            <td class="deadline moderate">June 30, 2025</td>
+                            <td>Asia-Pacific organizations</td>
+                            <td><a href="#" class="btn-small btn-primary">Apply Now</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="opportunity-name">AMRUT Urban Transformation</div>
+                                <div class="opportunity-type">Infrastructure Grant</div>
+                            </td>
+                            <td>Ministry of Housing & Urban Affairs</td>
+                            <td>₹5,200 crore (2024)</td>
+                            <td class="deadline ongoing">Ongoing</td>
+                            <td>Urban Local Bodies</td>
+                            <td><a href="#" class="btn-small btn-secondary">Learn More</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="opportunity-name">PMAY-Urban Heat Resilience</div>
+                                <div class="opportunity-type">Housing & Cooling</div>
+                            </td>
+                            <td>Ministry of Housing & Urban Affairs</td>
+                            <td>₹22,103 crore (2024)</td>
+                            <td class="deadline ongoing">Ongoing</td>
+                            <td>States & ULBs</td>
+                            <td><a href="#" class="btn-small btn-secondary">Learn More</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-actions">
+                <a href="#" class="btn btn-outline">Download Full Database</a>
+                <a href="#" class="btn btn-primary">Subscribe to Updates</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Catalytic Capital in Action</h2>
+                <p class="section-subtitle">
+                    Real-world examples of how strategic funding is building heat resilience across India and Asia.
+                </p>
+            </div>
+
+            <div class="success-stories">
+                <div class="story-card featured">
+                    <div class="story-image">
+                        <img src="/assets/images/sewa-parametric.jpg" alt="SEWA women with insurance coverage">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-badge">Parametric Insurance</div>
+                        <h3 class="story-title">SEWA Ahmedabad: Protecting 46,000 Women Workers</h3>
+                        <p class="story-description">
+                            Self-Employed Women's Association pioneers parametric heat insurance, providing 
+                            rapid payouts based on temperature thresholds for vulnerable women workers.
+                        </p>
+                        <div class="story-impact">
+                            <div class="impact-metric">
+                                <span class="metric-value">46,000</span>
+                                <span class="metric-label">Women covered</span>
+                            </div>
+                            <div class="impact-metric">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Payout rate on trigger</span>
+                            </div>
+                            <div class="impact-metric">
+                                <span class="metric-value">3 days</span>
+                                <span class="metric-label">Average payout time</span>
+                            </div>
+                        </div>
+                        <a href="#" class="story-action">Read Full Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="story-grid">
+                    <div class="story-card">
+                        <div class="story-content">
+                            <div class="story-badge">Blended Finance</div>
+                            <h4 class="story-title">GGEF: Scaling Distributed Solar</h4>
+                            <p class="story-description">
+                                Green Growth Equity Fund leverages public-private partnership to attract 
+                                private capital into waste management and solar sectors.
+                            </p>
+                            <div class="story-impact-small">
+                                <span>$200M+ mobilized</span>
+                                <span>15+ projects funded</span>
+                            </div>
+                            <a href="#" class="story-action">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="story-card">
+                        <div class="story-content">
+                            <div class="story-badge">Government Scheme</div>
+                            <h4 class="story-title">Odisha: Groundwater & Solar Irrigation</h4>
+                            <p class="story-description">
+                                GCF-funded $34.4M project combines groundwater recharge with 
+                                solar micro-irrigation for climate resilience.
+                            </p>
+                            <div class="story-impact-small">
+                                <span>25,000 farmers benefited</span>
+                                <span>50% irrigation efficiency gain</span>
+                            </div>
+                            <a href="#" class="story-action">View Project →</a>
+                        </div>
+                    </div>
+
+                    <div class="story-card">
+                        <div class="story-content">
+                            <div class="story-badge">Disaster Fund</div>
+                            <h4 class="story-title">Nagaland: Parametric Agriculture Insurance</h4>
+                            <p class="story-description">
+                                State Disaster Management Authority pilots rainfall-based parametric 
+                                insurance with ₹70 lakh premium for ₹5 crore coverage.
+                            </p>
+                            <div class="story-impact-small">
+                                <span>₹5 crore coverage</span>
+                                <span>Automated triggers</span>
+                            </div>
+                            <a href="#" class="story-action">Replicate Model →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit Project Section -->
+    <section class="section bg-primary text-white" id="submit-project">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Fund Heat Resilience?</h2>
+                <p class="cta-description">
+                    Submit your heat resilience project for funding consideration, or connect with our 
+                    finance experts to design innovative funding mechanisms for your region.
+                </p>
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-white">Submit Project Proposal</a>
+                    <a href="#" class="btn btn-outline-white">Schedule Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="/assets/images/logo.svg" alt="BeatTheHeat.Asia" class="footer-logo">
+                        <p class="footer-description">
+                            Building a heat-resilient future through collective action, innovative financing, and evidence-based solutions.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Platform</h3>
+                    <ul class="footer-links">
+                        <li><a href="/crisis.html">Crisis Hub</a></li>
+                        <li><a href="/knowledge.html">Knowledge Commons</a></li>
+                        <li><a href="/fund.html">Fund Heat</a></li>
+                        <li><a href="/policy.html">Policy Lab</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Community</h3>
+                    <ul class="footer-links">
+                        <li><a href="/community.html">Forum</a></li>
+                        <li><a href="/events.html">Events</a></li>
+                        <li><a href="/coalition.html">Coalition</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">API Documentation</a></li>
+                        <li><a href="#">Research Reports</a></li>
+                        <li><a href="#">Media Kit</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2025 BeatTheHeat.Asia. Building heat resilience through collective action.
+                </p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter">📱</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="GitHub">🔗</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
