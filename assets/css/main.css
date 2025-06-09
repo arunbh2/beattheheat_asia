@@ -26,6 +26,412 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* ===== CAROUSEL COMPONENT STYLES ===== */
+/* Add these styles to your main.css file */
+
+.beat-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.carousel-slide {
+  flex: 0 0 auto;
+  width: 100%;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-slide--clone {
+  pointer-events: none;
+}
+
+/* Fade transition support */
+.beat-carousel--fade .carousel-track {
+  transform: none !important;
+}
+
+.beat-carousel--fade .carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.beat-carousel--fade .carousel-slide:first-child {
+  position: relative;
+}
+
+/* Arrow Controls */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  color: var(--color-midnight-navy);
+}
+
+.carousel-arrow:hover {
+  background: var(--color-white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.carousel-arrow:focus {
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.carousel-arrow--prev {
+  left: 16px;
+}
+
+.carousel-arrow--next {
+  right: 16px;
+}
+
+.carousel-arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hide arrows on mobile */
+@media (max-width: 768px) {
+  .carousel-arrow {
+    display: none;
+  }
+}
+
+/* Dot Indicators */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4) 0;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.carousel-dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.2);
+}
+
+.carousel-dot:focus {
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.carousel-dot--active {
+  background: var(--color-white);
+  transform: scale(1.3);
+}
+
+/* Play/Pause Button */
+.carousel-play-pause {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
+  color: var(--color-white);
+}
+
+.carousel-play-pause:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.carousel-play-pause:focus {
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.carousel-play-pause .play-icon {
+  display: block;
+}
+
+.carousel-play-pause .pause-icon {
+  display: none;
+}
+
+.carousel-play-pause--playing .play-icon {
+  display: none;
+}
+
+.carousel-play-pause--playing .pause-icon {
+  display: block;
+}
+
+/* ===== SPECIFIC CAROUSEL TYPES ===== */
+
+/* Success Stories Carousel */
+.success-stories-carousel .carousel-slide {
+  padding: 0 var(--space-4);
+}
+
+.success-stories-carousel .story-card {
+  margin: 0;
+  height: 100%;
+}
+
+/* Partner Logos Carousel */
+.partners-carousel {
+  background: #F9FAFB;
+  padding: var(--space-8) 0;
+}
+
+.partners-carousel .carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+}
+
+.partners-carousel .partner-logo {
+  max-width: 150px;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.partners-carousel .partner-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Events Carousel */
+.events-carousel .carousel-slide {
+  padding: 0 var(--space-3);
+}
+
+.events-carousel .event-card {
+  margin: 0;
+  height: 100%;
+  min-height: 300px;
+}
+
+/* Testimonials Carousel */
+.testimonials-carousel {
+  background: var(--color-midnight-navy);
+  color: var(--color-white);
+  padding: var(--space-12) 0;
+}
+
+.testimonials-carousel .carousel-slide {
+  text-align: center;
+  padding: 0 var(--space-8);
+}
+
+.testimonials-carousel .testimonial-content {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: var(--space-6);
+  line-height: 1.6;
+}
+
+.testimonials-carousel .testimonial-author {
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-2);
+}
+
+.testimonials-carousel .testimonial-role {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+}
+
+.testimonials-carousel .carousel-dot {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.testimonials-carousel .carousel-dot--active {
+  background: var(--color-white);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px) {
+  .carousel-dots {
+    bottom: 8px;
+    gap: var(--space-1);
+  }
+  
+  .carousel-dot {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .carousel-play-pause {
+    width: 36px;
+    height: 36px;
+    top: 8px;
+    right: 8px;
+  }
+  
+  .success-stories-carousel .carousel-slide,
+  .events-carousel .carousel-slide {
+    padding: 0 var(--space-2);
+  }
+  
+  .testimonials-carousel .carousel-slide {
+    padding: 0 var(--space-4);
+  }
+  
+  .testimonials-carousel .testimonial-content {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel-arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .testimonials-carousel .testimonial-content {
+    font-size: 1rem;
+  }
+}
+
+/* ===== LOADING STATES ===== */
+
+.beat-carousel:not(.carousel--loaded) {
+  opacity: 0;
+}
+
+.beat-carousel.carousel--loaded {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Carousel loading spinner */
+.carousel-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background: #F9FAFB;
+}
+
+.carousel-loading::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--color-border-light);
+  border-top: 3px solid var(--color-cool-teal);
+  border-radius: 50%;
+  animation: carousel-spin 1s linear infinite;
+}
+
+@keyframes carousel-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ===== ACCESSIBILITY ENHANCEMENTS ===== */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .carousel-arrow {
+    background: var(--color-white);
+    border: 2px solid var(--color-midnight-navy);
+  }
+  
+  .carousel-dot {
+    border: 2px solid var(--color-white);
+  }
+  
+  .carousel-dot--active {
+    background: var(--color-white);
+    border-color: var(--color-midnight-navy);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track {
+    transition: none;
+  }
+  
+  .carousel-slide {
+    transition: none;
+  }
+  
+  .carousel-arrow {
+    transition: none;
+  }
+  
+  .carousel-dot {
+    transition: none;
+  }
+  
+  .beat-carousel.carousel--loaded {
+    transition: none;
+  }
+}
+
+/* Focus visible for better keyboard navigation */
+.carousel-arrow:focus-visible,
+.carousel-dot:focus-visible,
+.carousel-play-pause:focus-visible {
+  outline: 3px solid var(--color-cool-teal);
+  outline-offset: 2px;
+}
 
 /* ===== TYPOGRAPHY SYSTEM ===== */
 h1, h2, h3, h4, h5, h6 {
