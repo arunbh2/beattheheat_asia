@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Data & Stories: Understanding Asia's Heat Crisis. Comprehensive evidence base showcasing risk maps, human impact stories, and economic costs of extreme heat across South Asia.">
+    <meta name="keywords" content="heat crisis data, extreme heat impact, district heat risk, urban heat island, heat vulnerability, climate data India">
+    <meta name="author" content="BeatTheHeat.Asia">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Data & Stories: Understanding Asia's Heat Crisis">
+    <meta property="og:description" content="Evidence base showcasing risk maps, human impact stories, and economic costs of extreme heat.">
+    <meta property="og:url" content="https://beattheheat.asia/crisis.html">
+    
+    <title>Data & Stories: Understanding Asia's Heat Crisis | BeatTheHeat.Asia</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Preload fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Heat Emergency Ribbon -->
+    <div class="heat-ribbon" role="banner" aria-label="Heat Emergency Alert">
+        <div class="container">
+            <div class="heat-ribbon__text">
+                <span class="heat-ribbon__icon" aria-hidden="true">🌡️</span>
+                <span><strong>LIVE CRISIS TRACKING:</strong> 57% of Indian districts face high to very high heat risk | 76% of population at risk</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container nav__container">
+            <a href="/index.html" class="nav__logo" aria-label="BeatTheHeat.Asia Homepage">
+                BeatTheHeat<span class="text-heat">.Asia</span>
+            </a>
+            
+            <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                ☰
+            </button>
+            
+            <ul class="nav__menu" role="menubar">
+                <li role="none"><a href="/crisis.html" class="nav__link" role="menuitem" aria-current="page">Crisis Hub</a></li>
+                <li role="none"><a href="/knowledge.html" class="nav__link" role="menuitem">Knowledge</a></li>
+                <li role="none"><a href="/fund.html" class="nav__link" role="menuitem">Fund Heat</a></li>
+                <li role="none"><a href="/community.html" class="nav__link" role="menuitem">Community</a></li>
+                <li role="none"><a href="/events.html" class="nav__link" role="menuitem">Events</a></li>
+                <li role="none"><a href="/policy.html" class="nav__link" role="menuitem">Policy Lab</a></li>
+                <li role="none"><a href="/coalition.html" class="nav__link" role="menuitem">Coalition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, var(--color-heat-red) 0%, #D14A2B 100%);" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero__content">
+                <h1 id="hero-title" class="hero__title">
+                    The Heat Crisis Hub
+                </h1>
+                <p class="hero__subtitle">
+                    The threat is systemic, measurable, and escalating—but so is our capacity to respond.
+                </p>
+                <div class="hero__cta">
+                    <a href="#heat-risk-atlas" class="btn btn--outline btn--large">
+                        Explore Risk Maps
+                    </a>
+                    <a href="#economic-impact" class="btn btn--outline btn--large">
+                        View Economic Data
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crisis Overview Stats -->
+    <section class="section section--compact" style="background-color: var(--color-bg-section);" aria-labelledby="overview-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="overview-title">Heat: The Silent Disaster</h2>
+                <p class="text-muted mb-0">
+                    Extreme heat is often called an invisible disaster because it doesn't leave behind physical destruction, making it harder to measure its impact.
+                </p>
+            </div>
+            
+            <div class="grid grid--4">
+                <div class="stat">
+                    <span class="stat__number">734</span>
+                    <span class="stat__label">Indian Districts Assessed for Heat Risk</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">57%</span>
+                    <span class="stat__label">Districts Face High to Very High Heat Risk</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">70%</span>
+                    <span class="stat__label">Districts Experience 5+ Additional Very Warm Nights</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">500+</span>
+                    <span class="stat__label">Heatwave Days in India (2024)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heat Risk Atlas Section -->
+    <section class="section" id="heat-risk-atlas" aria-labelledby="risk-atlas-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="risk-atlas-title">Heat Risk Atlas: Mapping the Hotspots</h2>
+                <p class="hero__subtitle text-muted mb-0">
+                    CEEW's groundbreaking district-level assessment reveals the geography of heat vulnerability across India.
+                </p>
+            </div>
+            
+            <div class="grid grid--2" style="gap: var(--space-12);">
+                <div>
+                    <h3 class="mb-6">Key Findings from 734 Districts</h3>
+                    
+                    <div class="highlight highlight--urgent mb-6">
+                        <h4 class="text-heat mb-4">Top 10 States/UTs with Highest Heat Risk</h4>
+                        <div class="grid grid--2" style="gap: var(--space-4);">
+                            <div>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li class="mb-2">🔥 <strong>Delhi</strong></li>
+                                    <li class="mb-2">🔥 <strong>Maharashtra</strong></li>
+                                    <li class="mb-2">🔥 <strong>Goa</strong></li>
+                                    <li class="mb-2">🔥 <strong>Kerala</strong></li>
+                                    <li class="mb-0">🔥 <strong>Gujarat</strong></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li class="mb-2">🔥 <strong>Rajasthan</strong></li>
+                                    <li class="mb-2">🔥 <strong>Tamil Nadu</strong></li>
+                                    <li class="mb-2">🔥 <strong>Andhra Pradesh</strong></li>
+                                    <li class="mb-2">🔥 <strong>Madhya Pradesh</strong></li>
+                                    <li class="mb-0">🔥 <strong>Uttar Pradesh</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__header">
+                            <h4 class="card__title">The Growing Threat of Very Warm Nights</h4>
+                        </div>
+                        <div class="card__content">
+                            <p>Over the last decade, <strong class="text-heat">very warm nights have increased faster than very hot days</strong>, preventing the human body from cooling down after intense daytime heat.</p>
+                            <p class="mb-0">This significantly increases health risks such as heat strokes and worsens non-communicable diseases like diabetes and hypertension.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="card" style="background: linear-gradient(135deg, rgba(255, 90, 54, 0.1) 0%, rgba(255, 188, 64, 0.1) 100%);">
+                        <div class="card__header">
+                            <h4 class="card__title">Risk Assessment Framework</h4>
+                            <div class="card__subtitle">IPCC AR5 Methodology</div>
+                        </div>
+                        <div class="card__content">
+                            <div class="mb-4">
+                                <div style="display: flex; align-items: center; margin-bottom: var(--space-3);">
+                                    <div style="background: var(--color-heat-red); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: var(--space-3); color: white; font-weight: bold;">H</div>
+                                    <div>
+                                        <strong>Hazard:</strong> Heat intensity, humidity, frequency
+                                    </div>
+                                </div>
+                                <div style="display: flex; align-items: center; margin-bottom: var(--space-3);">
+                                    <div style="background: var(--color-warning-amber); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: var(--space-3); color: white; font-weight: bold;">E</div>
+                                    <div>
+                                        <strong>Exposure:</strong> Population density, geographic distribution
+                                    </div>
+                                </div>
+                                <div style="display: flex; align-items: center;">
+                                    <div style="background: var(--color-cool-teal); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: var(--space-3); color: white; font-weight: bold;">V</div>
+                                    <div>
+                                        <strong>Vulnerability:</strong> Socio-economic, health, infrastructure factors
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <p class="mb-0 text-center"><strong>Risk = f(Hazard × Exposure × Vulnerability)</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urban Heat Islands Section -->
+    <section class="section" style="background-color: var(--color-bg-section);" aria-labelledby="uhi-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="uhi-title">Urban Heat Islands: Cities Under Siege</h2>
+                <p class="hero__subtitle text-muted mb-0">
+                    Cities experience temperatures 2-8°C higher than surrounding rural areas, with nighttime differences reaching up to 12°C.
+                </p>
+            </div>
+            
+            <div class="grid grid--2" style="gap: var(--space-12);">
+                <div>
+                    <h3 class="mb-6">Very Warm Nights in Major Cities</h3>
+                    <p class="text-muted mb-6">Additional very warm nights per summer (last decade vs baseline):</p>
+                    
+                    <div class="grid grid--1" style="gap: var(--space-4);">
+                        <div class="card">
+                            <div class="card__content">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span><strong>Mumbai</strong></span>
+                                    <span class="text-heat font-bold">+15 nights</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span><strong>Bengaluru</strong></span>
+                                    <span class="text-heat font-bold">+11 nights</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span><strong>Bhopal & Jaipur</strong></span>
+                                    <span class="text-heat font-bold">+7 nights each</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span><strong>Delhi</strong></span>
+                                    <span class="text-heat font-bold">+6 nights</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span><strong>Chennai</strong></span>
+                                    <span class="text-heat font-bold">+4 nights</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="mb-6">UHI Contributors</h3>
+                    
+                    <div class="grid grid--1" style="gap: var(--space-4);">
+                        <div style="display: flex; align-items: center; padding: var(--space-4); background: white; border-radius: 8px; border-left: 4px solid var(--color-heat-red);">
+                            <span style="font-size: 24px; margin-right: var(--space-3);">🏢</span>
+                            <span><strong>Dense built environments</strong> trap and retain heat</span>
+                        </div>
+                        <div style="display: flex; align-items: center; padding: var(--space-4); background: white; border-radius: 8px; border-left: 4px solid var(--color-warning-amber);">
+                            <span style="font-size: 24px; margin-right: var(--space-3);">🛣️</span>
+                            <span><strong>Concrete and asphalt</strong> absorb and retain heat</span>
+                        </div>
+                        <div style="display: flex; align-items: center; padding: var(--space-4); background: white; border-radius: 8px; border-left: 4px solid var(--color-cool-teal);">
+                            <span style="font-size: 24px; margin-right: var(--space-3);">🏭</span>
+                            <span><strong>Industrial emissions</strong> and energy use generate waste heat</span>
+                        </div>
+                        <div style="display: flex; align-items: center; padding: var(--space-4); background: white; border-radius: 8px; border-left: 4px solid var(--color-leaf-green);">
+                            <span style="font-size: 24px; margin-right: var(--space-3);">🌳</span>
+                            <span><strong>Reduced vegetation</strong> eliminates natural cooling</span>
+                        </div>
+                        <div style="display: flex; align-items: center; padding: var(--space-4); background: white; border-radius: 8px; border-left: 4px solid var(--color-midnight-navy);">
+                            <span style="font-size: 24px; margin-right: var(--space-3);">🚗</span>
+                            <span><strong>Vehicular emissions</strong> add to heat pollution</span>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight highlight--urgent mt-6">
+                        <p class="mb-0"><strong>Critical Impact:</strong> With nearly 50% of India's population expected to live in urban areas by 2050, this poses a serious threat to public health and economic productivity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Human Face of Heat Section -->
+    <section class="section" aria-labelledby="human-impact-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="human-impact-title">The Human Face of Heat</h2>
+                <p class="hero__subtitle text-muted mb-0">
+                    Vulnerable communities who have historically contributed the least to climate change are disproportionately affected.
+                </p>
+            </div>
+            
+            <div class="grid grid--3">
+                <article class="card">
+                    <div class="card__header">
+                        <div class="card__icon card__icon--crisis" aria-hidden="true">👩</div>
+                        <h3 class="card__title">Women & Children</h3>
+                    </div>
+                    <div class="card__content">
+                        <p>Pregnant women and children are especially vulnerable. Heat affects pregnancy outcomes and child development, with informal sector women facing increased exposure in poorly ventilated work environments.</p>
+                        <div class="stat">
+                            <span class="stat__number">50M+</span>
+                            <span class="stat__label">Women in informal heat-exposed work</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <div class="card__icon card__icon--fund" aria-hidden="true">👷</div>
+                        <h3 class="card__title">Outdoor Workers</h3>
+                    </div>
+                    <div class="card__content">
+                        <p>Construction workers, farmers, delivery personnel, and street vendors face direct heat exposure. Up to 75% of India's workforce depends on heat-exposed labor, affecting 380 million people.</p>
+                        <div class="stat">
+                            <span class="stat__number">380M</span>
+                            <span class="stat__label">People in heat-exposed labor</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <div class="card__icon card__icon--community" aria-hidden="true">👴</div>
+                        <h3 class="card__title">Elderly & Chronically Ill</h3>
+                    </div>
+                    <div class="card__content">
+                        <p>Those with existing health conditions like diabetes, hypertension, and cardiovascular disease face increased risks. Heat exacerbates chronic conditions and limits access to cooling.</p>
+                        <div class="stat">
+                            <span class="stat__number">1.05B</span>
+                            <span class="stat__label">People exposed to extreme heat stress (2024)</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="highlight highlight--urgent mt-8">
+                <h4 class="text-heat mb-4">The Dignity Deficit</h4>
+                <p class="mb-0">The inability to live, work, and learn in thermally safe environments is fundamentally an issue of human dignity and equity. Access to cooling, safe working conditions, and resilient livelihoods in the face of extreme heat is a fundamental human right.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economic Impact Section -->
+    <section class="section" id="economic-impact" style="background-color: var(--color-bg-section);" aria-labelledby="economic-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="economic-title">Economic & Environmental Costs</h2>
+                <p class="hero__subtitle text-muted mb-0">
+                    Heat stress threatens to derail development progress and exacerbate poverty across multiple sectors.
+                </p>
+            </div>
+            
+            <div class="grid grid--2" style="gap: var(--space-12);">
+                <div>
+                    <h3 class="mb-6">Labor Productivity Losses</h3>
+                    
+                    <div class="grid grid--1" style="gap: var(--space-6);">
+                        <div class="stat">
+                            <span class="stat__number">4.5%</span>
+                            <span class="stat__label">Of India's GDP at risk by 2030 (USD 150-250 billion)</span>
+                        </div>
+                        
+                        <div class="stat">
+                            <span class="stat__number">34M</span>
+                            <span class="stat__label">Job losses projected in India by 2030 due to heat stress</span>
+                        </div>
+                        
+                        <div class="stat">
+                            <span class="stat__number">101B</span>
+                            <span class="stat__label">Labor hours lost to heat and humidity (2001-2020)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight mt-6">
+                        <h4 class="mb-4">Sector-Specific Impacts</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li class="mb-3">🌾 <strong>Agriculture:</strong> 47% of India's workforce facing heat stress</li>
+                            <li class="mb-3">🏗️ <strong>Construction:</strong> 11% of workforce working in direct sunlight</li>
+                            <li class="mb-3">🏭 <strong>Manufacturing:</strong> Up to 30% decline in factory output during summer</li>
+                            <li class="mb-0">📦 <strong>Delivery/Logistics:</strong> Workers spending 8-10 hours daily on roads</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="mb-6">Agricultural & Energy Impacts</h3>
+                    
+                    <div class="card mb-6">
+                        <div class="card__header">
+                            <h4 class="card__title">Crop Losses (2024)</h4>
+                        </div>
+                        <div class="card__content">
+                            <p>Extreme weather events affected <strong class="text-heat">3.2 million hectares</strong> of crop area in 2024.</p>
+                            <div class="mb-4">
+                                <p><strong>Price Impacts in Haryana:</strong></p>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li class="mb-2">🥒 Okra: ₹80 → ₹100/kg</li>
+                                    <li class="mb-2">🍇 Grapes: ₹70 → ₹120/kg</li>
+                                    <li class="mb-0">🥬 Green vegetables: +30% in 2 days</li>
+                                </ul>
+                            </div>
+                            <p class="mb-0"><strong>Temperature Impact:</strong> 1°C increase in nighttime temperatures reduces wheat yields by 6% and rice yields by up to 10%.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__header">
+                            <h4 class="card__title">Energy Grid Strain</h4>
+                        </div>
+                        <div class="card__content">
+                            <p>Extreme heat strains energy grids, damages infrastructure, and increases cooling demand exponentially.</p>
+                            <div class="highlight">
+                                <p class="mb-0"><strong>Cascading Effects:</strong> Infrastructure damage, supply chain disruptions, increased healthcare costs, and reduced business productivity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authoritative Voices Section -->
+    <section class="section" aria-labelledby="voices-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="voices-title">Global Leaders Speak</h2>
+                <p class="hero__subtitle text-muted mb-0">
+                    Authoritative voices frame extreme heat as a humanitarian crisis and matter of global justice.
+                </p>
+            </div>
+            
+            <div class="grid grid--1" style="gap: var(--space-8);">
+                <blockquote class="highlight" style="border-left: 4px solid var(--color-heat-red); font-style: italic; font-size: 18px;">
+                    <p>"Extreme heat is increasingly tearing through economies, widening inequalities, undermining the Sustainable Development Goals and killing people. Heat is estimated to kill almost half a million people a year, that's about 30 times more than tropical cyclones."</p>
+                    <footer class="mt-4">
+                        <strong>— UN Secretary-General António Guterres</strong>, July 2024
+                    </footer>
+                </blockquote>
+                
+                <blockquote class="highlight" style="border-left: 4px solid var(--color-cool-teal); font-style: italic; font-size: 18px;">
+                    <p>"Extreme heat is the most visible effect of climate change, everyone is affected. Those with existing health conditions will be made much worse with extreme heat and it impacts the health of everyone in sometimes surprising ways. Even mental health is affected by heat, making people confused, anxious or even violent."</p>
+                    <footer class="mt-4">
+                        <strong>— Dr. Maria Neira</strong>, Director, Department of Environment, Climate Change and Health, WHO, July 2024
+                    </footer>
+                </blockquote>
+                
+                <blockquote class="highlight" style="border-left: 4px solid var(--color-warning-amber); font-style: italic; font-size: 18px;">
+                    <p>"Human-caused climate change is already affecting many weather and climate extremes in every region across the globe. This has led to widespread adverse impacts and related losses and damages to nature and people. Vulnerable communities who have historically contributed the least to current climate change are disproportionately affected."</p>
+                    <footer class="mt-4">
+                        <strong>— IPCC AR6 Synthesis Report</strong>, Headline Statements
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Sources Section -->
+    <section class="section section--compact" style="background-color: var(--color-bg-section);" aria-labelledby="sources-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="sources-title">Data Sources & Methodology</h2>
+            </div>
+            
+            <div class="grid grid--3">
+                <div class="card">
+                    <div class="card__header">
+                        <h4 class="card__title">CEEW Heat Risk Index</h4>
+                    </div>
+                    <div class="card__content">
+                        <p>734 districts assessed using 35 indicators covering hazard, exposure, and vulnerability. Based on IPCC AR5 framework.</p>
+                    </div>
+                    <div class="card__footer">
+                        <a href="#" class="btn btn--outline">Download Report →</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card__header">
+                        <h4 class="card__title">IMDAA Climate Data</h4>
+                    </div>
+                    <div class="card__content">
+                        <p>High-resolution climate dataset breaking down India's area into 12-km grids for precise temperature mapping.</p>
+                    </div>
+                    <div class="card__footer">
+                        <a href="#" class="btn btn--outline">Access Data →</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card__header">
+                        <h4 class="card__title">Satellite Imagery</h4>
+                    </div>
+                    <div class="card__content">
+                        <p>MODIS and Landsat data for land surface temperature, urban heat island mapping, and land use analysis.</p>
+                    </div>
+                    <div class="card__footer">
+                        <a href="#" class="btn btn--outline">View Maps →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section" aria-labelledby="cta-title">
+        <div class="container text-center">
+            <h2 id="cta-title">From Data to Action</h2>
+            <p class="hero__subtitle text-muted mb-8">
+                The evidence is clear: extreme heat is a systemic crisis requiring coordinated response. Explore solutions or join the coalition building change.
+            </p>
+            
+            <div class="flex flex--center" style="gap: var(--space-4); flex-wrap: wrap;">
+                <a href="/knowledge.html" class="btn btn--primary btn--large">Explore Solutions</a>
+                <a href="/fund.html" class="btn btn--secondary btn--large">Fund Resilience</a>
+                <a href="/policy.html" class="btn btn--outline btn--large">Policy Tools</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>BeatTheHeat<span class="text-heat">.Asia</span></h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        Orchestrating urban heat resilience through collective action, shared knowledge, and catalytic funding.
+                    </p>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Crisis Hub</h3>
+                    <ul class="footer__links">
+                        <li><a href="#heat-risk-atlas">Heat Risk Atlas</a></li>
+                        <li><a href="#economic-impact">Economic Impact</a></li>
+                        <li><a href="/crisis.html">Human Stories</a></li>
+                        <li><a href="/crisis.html">UHI Effects</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Take Action</h3>
+                    <ul class="footer__links">
+                        <li><a href="/knowledge.html">Find Solutions</a></li>
+                        <li><a href="/fund.html">Access Funding</a></li>
+                        <li><a href="/policy.html">Policy Tools</a></li>
+                        <li><a href="/coalition.html">Join Coalition</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Data & Research</h3>
+                    <ul class="footer__links">
+                        <li><a href="mailto:data@beattheheat.asia">Data Requests</a></li>
+                        <li><a href="/methodology">Methodology</a></li>
+                        <li><a href="/sources">Data Sources</a></li>
+                        <li><a href="/api">API Access</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 BeatTheHeat.Asia. Evidence-based platform for climate resilience. <a href="/privacy" style="color: rgba(255, 255, 255, 0.8);">Privacy Policy</a> | <a href="/terms" style="color: rgba(255, 255, 255, 0.8);">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav__toggle');
+            const navMenu = document.querySelector('.nav__menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    const isOpen = navMenu.classList.contains('nav__menu--open');
+                    navMenu.classList.toggle('nav__menu--open');
+                    navToggle.setAttribute('aria-expanded', !isOpen);
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const navHeight = document.querySelector('.nav').offsetHeight;
+                        const ribbonHeight = document.querySelector('.heat-ribbon').offsetHeight;
+                        const offset = navHeight + ribbonHeight;
+                        
+                        window.scrollTo({
+                            top: target.offsetTop - offset,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Heat ribbon pulse animation control
+            const heatRibbon = document.querySelector('.heat-ribbon');
+            if (heatRibbon && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                heatRibbon.style.animation = 'none';
+            }
+            
+            // Intersection Observer for animated stats
+            const stats = document.querySelectorAll('.stat__number');
+            if (stats.length > 0) {
+                const observerOptions = {
+                    threshold: 0.5,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.transform = 'scale(1.05)';
+                            entry.target.style.transition = 'transform 0.3s ease-in-out';
+                            setTimeout(() => {
+                                entry.target.style.transform = 'scale(1)';
+                            }, 300);
+                        }
+                    });
+                }, observerOptions);
+                
+                stats.forEach(stat => observer.observe(stat));
+            }
+        });
+    </script>
+</body>
+</html>
