@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Knowledge Hub: A Catalogue of Hope. Proven and emerging heat resilience solutions organized for action at every scale - from household cooling to ecosystem-wide interventions.">
+    <meta name="keywords" content="heat resilience solutions, cool roofs, blue-green infrastructure, heat action plans, cooling technologies, nature-based solutions, urban planning">
+    <meta name="author" content="BeatTheHeat.Asia">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Knowledge Hub: A Catalogue of Hope | BeatTheHeat.Asia">
+    <meta property="og:description" content="Proven and emerging solutions for heat resilience organized by scale and maturity level.">
+    <meta property="og:url" content="https://beattheheat.asia/knowledge.html">
+    
+    <title>Knowledge Hub: A Catalogue of Hope | BeatTheHeat.Asia</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Preload fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Heat Emergency Ribbon -->
+    <div class="heat-ribbon" role="banner" aria-label="Heat Emergency Alert">
+        <div class="container">
+            <div class="heat-ribbon__text">
+                <span class="heat-ribbon__icon" aria-hidden="true">💡</span>
+                <span><strong>SOLUTIONS SPOTLIGHT:</strong> 66 distinct heat resilience solutions mapped across 7 archetypes | From household to ecosystem scale</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo" aria-label="BeatTheHeat.Asia Homepage">
+                BeatTheHeat<span class="text-heat">.Asia</span>
+            </a>
+            
+            <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                ☰
+            </button>
+            
+            <ul class="nav__menu" role="menubar">
+                <li role="none"><a href="crisis.html" class="nav__link" role="menuitem">Crisis Hub</a></li>
+                <li role="none"><a href="knowledge.html" class="nav__link" role="menuitem" aria-current="page">Knowledge</a></li>
+                <li role="none"><a href="fund.html" class="nav__link" role="menuitem">Fund Heat</a></li>
+                <li role="none"><a href="community.html" class="nav__link" role="menuitem">Community</a></li>
+                <li role="none"><a href="events.html" class="nav__link" role="menuitem">Events</a></li>
+                <li role="none"><a href="policy.html" class="nav__link" role="menuitem">Policy Lab</a></li>
+                <li role="none"><a href="coalition.html" class="nav__link" role="menuitem">Coalition</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero--knowledge" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero__content">
+                <h1 id="hero-title" class="hero__title">
+                    Knowledge Hub: A Catalogue of Hope
+                </h1>
+                <p class="hero__subtitle">
+                    Proven and emerging solutions, organized for action at every scale. From household cooling to ecosystem-wide interventions.
+                </p>
+                <div class="hero__cta">
+                    <a href="#solution-browser" class="btn btn--outline btn--large">
+                        Browse Solutions
+                    </a>
+                    <a href="#case-studies" class="btn btn--outline btn--large">
+                        View Case Studies
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Stats -->
+    <section class="section section--compact" style="background-color: var(--color-bg-section);" aria-labelledby="overview-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="overview-title">The Evolving Solution Ecosystem</h2>
+                <p class="text-muted mb-0">
+                    A systematic approach to identify and classify heat resilience solutions across India and South Asia.
+                </p>
+            </div>
+            
+            <div class="grid grid--4">
+                <div class="stat">
+                    <span class="stat__number">66</span>
+                    <span class="stat__label">Distinct Solutions Identified</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">7</span>
+                    <span class="stat__label">Solution Archetypes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">4</span>
+                    <span class="stat__label">Scale Categories</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number">5</span>
+                    <span class="stat__label">Maturity Levels (LNEMT)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Browser Section -->
+    <section class="section" id="solution-browser" aria-labelledby="browser-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="browser-title">Solution Archetypes</h2>
+                <p class="hero__subtitle text-muted mb-0">
+                    Seven key approaches to addressing urban heat, from infrastructure to community engagement.
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs mb-8" role="tablist">
+                <button class="filter-tab filter-tab--active" role="tab" aria-selected="true" data-filter="all">All Solutions</button>
+                <button class="filter-tab" role="tab" aria-selected="false" data-filter="household">Household</button>
+                <button class="filter-tab" role="tab" aria-selected="false" data-filter="community">Community</button>
+                <button class="filter-tab" role="tab" aria-selected="false" data-filter="city">City</button>
+                <button class="filter-tab" role="tab" aria-selected="false" data-filter="ecosystem">Ecosystem</button>
+            </div>
+            
+            <!-- Solution Archetype Grid -->
+            <div class="grid grid--2 gap-large" id="solution-grid">
+                <!-- Archetype 1: Urban Planning & Built Environment -->
+                <article class="solution-card" data-scale="city ecosystem">
+                    <div class="solution-card__header">
+                        <div class="solution-card__icon" style="background: rgba(46, 204, 113, 0.1); color: var(--color-leaf-green);">🏙️</div>
+                        <div class="solution-card__badge solution-card__badge--emerging">Emerging</div>
+                        <h3 class="solution-card__title">Urban Planning & Built Environment</h3>
+                        <p class="solution-card__subtitle">Focus on modifying the physical aspects of urban areas to combat heat</p>
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-grid grid--2 gap-small">
+                            <div class="solution-item">
+                                <strong>Green Infrastructure</strong>
+                                <p>Urban afforestation, green corridors, rooftop gardens</p>
+                                <span class="maturity-badge maturity-badge--mainstream">Mainstream</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>Blue Infrastructure</strong>
+                                <p>Artificial lakes, ponds, water features</p>
+                                <span class="maturity-badge maturity-badge--emerging">Emerging</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>Grey Infrastructure</strong>
+                                <p>Cool roofs, reflective pavements</p>
+                                <span class="maturity-badge maturity-badge--emerging">Emerging</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>Climate-resilient Design</strong>
+                                <p>Ventilated, green buildings</p>
+                                <span class="maturity-badge maturity-badge--nascent">Nascent</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-card__footer">
+                        <a href="#archetype-1" class="btn btn--outline">Explore Solutions →</a>
+                    </div>
+                </article>
+
+                <!-- Archetype 2: Restoration & Conservation -->
+                <article class="solution-card" data-scale="ecosystem city">
+                    <div class="solution-card__header">
+                        <div class="solution-card__icon" style="background: rgba(0, 164, 204, 0.1); color: var(--color-cool-teal);">🌿</div>
+                        <div class="solution-card__badge solution-card__badge--emerging">Emerging</div>
+                        <h3 class="solution-card__title">Restoration & Conservation</h3>
+                        <p class="solution-card__subtitle">Focus on reviving and protecting natural ecosystems to mitigate heat effects</p>
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-grid grid--1 gap-small">
+                            <div class="solution-item">
+                                <strong>Waterbody Rejuvenation</strong>
+                                <p>Lake restoration, wetland conservation</p>
+                                <span class="maturity-badge maturity-badge--emerging">Emerging</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>Natural Landscape Conservation</strong>
+                                <p>Wetlands, forests, and mangroves protection</p>
+                                <span class="maturity-badge maturity-badge--nascent">Nascent</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-card__footer">
+                        <a href="#archetype-2" class="btn btn--outline">Explore Solutions →</a>
+                    </div>
+                </article>
+
+                <!-- Archetype 3: Health & Social Protection -->
+                <article class="solution-card" data-scale="community city">
+                    <div class="solution-card__header">
+                        <div class="solution-card__icon" style="background: rgba(255, 90, 54, 0.1); color: var(--color-heat-red);">🏥</div>
+                        <div class="solution-card__badge solution-card__badge--nascent">Nascent</div>
+                        <h3 class="solution-card__title">Health & Social Protection</h3>
+                        <p class="solution-card__subtitle">Aim to safeguard human health and provide support systems against heat stress</p>
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-grid grid--2 gap-small">
+                            <div class="solution-item">
+                                <strong>Healthcare Infrastructure</strong>
+                                <p>Strengthening clinics and hospitals for heat-related illnesses</p>
+                                <span class="maturity-badge maturity-badge--nascent">Nascent</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>Social Safety Nets</strong>
+                                <p>Heatwave insurance, support for vulnerable groups</p>
+                                <span class="maturity-badge maturity-badge--nascent">Nascent</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-card__footer">
+                        <a href="#archetype-3" class="btn btn--outline">Explore Solutions →</a>
+                    </div>
+                </article>
+
+                <!-- Archetype 4: Behavioral & Community -->
+                <article class="solution-card" data-scale="community household">
+                    <div class="solution-card__header">
+                        <div class="solution-card__icon" style="background: rgba(255, 188, 64, 0.1); color: var(--color-warning-amber);">👥</div>
+                        <div class="solution-card__badge solution-card__badge--nascent">Nascent</div>
+                        <h3 class="solution-card__title">Behavioral & Community Interventions</h3>
+                        <p class="solution-card__subtitle">Focus on empowering local communities and individuals to prepare for heat-related challenges</p>
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-grid grid--2 gap-small">
+                            <div class="solution-item">
+                                <strong>Awareness Campaigns</strong>
+                                <p>Public education on heat stress prevention, hydration and first aid</p>
+                                <span class="maturity-badge maturity-badge--nascent">Nascent</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>Resilience Training</strong>
+                                <p>Preparing local communities for heat-related emergencies</p>
+                                <span class="maturity-badge maturity-badge--nascent">Nascent</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-card__footer">
+                        <a href="#archetype-4" class="btn btn--outline">Explore Solutions →</a>
+                    </div>
+                </article>
+
+                <!-- Archetype 5: Cooling Technologies -->
+                <article class="solution-card" data-scale="household community city">
+                    <div class="solution-card__header">
+                        <div class="solution-card__icon" style="background: rgba(0, 164, 204, 0.1); color: var(--color-cool-teal);">❄️</div>
+                        <div class="solution-card__badge solution-card__badge--emerging">Emerging</div>
+                        <h3 class="solution-card__title">Cooling Technologies</h3>
+                        <p class="solution-card__subtitle">Encompass technological solutions to reduce temperatures and provide cooling</p>
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-grid grid--2 gap-small">
+                            <div class="solution-item">
+                                <strong>Technological Solutions</strong>
+                                <p>Cooling innovation labs, personal cooling garments</p>
+                                <span class="maturity-badge maturity-badge--emerging">Emerging</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>Cooling Centers & Rest Points</strong>
+                                <p>Natural cooling solutions, shaded public spaces</p>
+                                <span class="maturity-badge maturity-badge--emerging">Emerging</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-card__footer">
+                        <a href="#archetype-5" class="btn btn--outline">Explore Solutions →</a>
+                    </div>
+                </article>
+
+                <!-- Archetype 6: Resource Efficiency -->
+                <article class="solution-card" data-scale="household community">
+                    <div class="solution-card__header">
+                        <div class="solution-card__icon" style="background: rgba(255, 188, 64, 0.1); color: var(--color-warning-amber);">⚡</div>
+                        <div class="solution-card__badge solution-card__badge--emerging">Emerging</div>
+                        <h3 class="solution-card__title">Resource Efficiency</h3>
+                        <p class="solution-card__subtitle">Aim to optimise the use of resources to combat heat and its impacts</p>
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-grid grid--2 gap-small">
+                            <div class="solution-item">
+                                <strong>Energy-efficient Appliances</strong>
+                                <p>Eco-friendly cooling devices, smart systems</p>
+                                <span class="maturity-badge maturity-badge--emerging">Emerging</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>Water Management</strong>
+                                <p>Prevention of water evaporation and wastage</p>
+                                <span class="maturity-badge maturity-badge--emerging">Emerging</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-card__footer">
+                        <a href="#archetype-6" class="btn btn--outline">Explore Solutions →</a>
+                    </div>
+                </article>
+
+                <!-- Archetype 7: Data & Information Systems -->
+                <article class="solution-card" data-scale="city ecosystem community">
+                    <div class="solution-card__header">
+                        <div class="solution-card__icon" style="background: rgba(18, 38, 58, 0.1); color: var(--color-midnight-navy);">📊</div>
+                        <div class="solution-card__badge solution-card__badge--emerging">Emerging</div>
+                        <h3 class="solution-card__title">Data & Information Systems</h3>
+                        <p class="solution-card__subtitle">Focus on leveraging data and information for better heat management and response</p>
+                    </div>
+                    <div class="solution-card__content">
+                        <div class="solution-grid grid--1 gap-small">
+                            <div class="solution-item">
+                                <strong>Early Warning Systems</strong>
+                                <p>Heat monitoring and alert systems, IMD forecasts integration</p>
+                                <span class="maturity-badge maturity-badge--emerging">Emerging</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-card__footer">
+                        <a href="#archetype-7" class="btn btn--outline">Explore Solutions →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- LNEMT Framework Section -->
+    <section class="section" style="background-color: var(--color-bg-section);" aria-labelledby="framework-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="framework-title">Solution Maturity Framework</h2>
+                <p class="hero__subtitle text-muted mb-0">
+                    Understanding where solutions stand in their development journey from research to widespread adoption.
+                </p>
+            </div>
+            
+            <div class="grid grid--5 gap-medium">
+                <div class="maturity-stage">
+                    <div class="maturity-stage__icon maturity-stage__icon--latent">L</div>
+                    <h4 class="maturity-stage__title">Latent</h4>
+                    <p class="maturity-stage__description">Solutions in R&D stage with early stage research</p>
+                </div>
+                <div class="maturity-stage">
+                    <div class="maturity-stage__icon maturity-stage__icon--nascent">N</div>
+                    <h4 class="maturity-stage__title">Nascent</h4>
+                    <p class="maturity-stage__description">Evidence of a few solutions in early stage pilots</p>
+                </div>
+                <div class="maturity-stage">
+                    <div class="maturity-stage__icon maturity-stage__icon--emerging">E</div>
+                    <h4 class="maturity-stage__title">Emerging</h4>
+                    <p class="maturity-stage__description">Multiple solutions being piloted across cities and states</p>
+                </div>
+                <div class="maturity-stage">
+                    <div class="maturity-stage__icon maturity-stage__icon--mainstream">M</div>
+                    <h4 class="maturity-stage__title">Mainstream</h4>
+                    <p class="maturity-stage__description">Consensus on solutions with large-scale implementation</p>
+                </div>
+                <div class="maturity-stage">
+                    <div class="maturity-stage__icon maturity-stage__icon--transformed">T</div>
+                    <h4 class="maturity-stage__title">Transformed</h4>
+                    <p class="maturity-stage__description">Solutions scaled up addressing pressing challenges</p>
+                </div>
+            </div>
+            
+            <div class="highlight mt-8">
+                <p class="text-center mb-0"><strong>Current State:</strong> India's heat adaptation solutions are predominantly in nascent or emerging stages, with significant potential for growth and scaling across all categories.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="section" id="case-studies" aria-labelledby="case-studies-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="case-studies-title">Proven Success Stories</h2>
+                <p class="hero__subtitle text-muted mb-0">
+                    Real-world implementations demonstrating the power of effective heat resilience solutions.
+                </p>
+            </div>
+            
+            <div class="grid grid--3">
+                <!-- Ahmedabad HAP Case Study -->
+                <article class="case-study-card">
+                    <div class="case-study-card__header">
+                        <div class="case-study-card__tag">Health & Social Protection</div>
+                        <h3 class="case-study-card__title">Ahmedabad Heat Action Plan</h3>
+                        <p class="case-study-card__location">Ahmedabad, Gujarat</p>
+                    </div>
+                    <div class="case-study-card__content">
+                        <div class="case-study-card__impact">
+                            <span class="impact-number">2,380</span>
+                            <span class="impact-label">Deaths avoided in first 2 years</span>
+                        </div>
+                        <p>First comprehensive HAP in South Asia following 2010 heatwave. Features early warning systems, community outreach, healthcare preparedness, and cool roofs program.</p>
+                        <div class="case-study-card__features">
+                            <span class="feature-tag">Early Warning</span>
+                            <span class="feature-tag">Community Outreach</span>
+                            <span class="feature-tag">Cool Roofs</span>
+                        </div>
+                    </div>
+                    <div class="case-study-card__footer">
+                        <a href="#ahmedabad-details" class="btn btn--outline">View Details →</a>
+                    </div>
+                </article>
+
+                <!-- Cool Roofs Program Case Study -->
+                <article class="case-study-card">
+                    <div class="case-study-card__header">
+                        <div class="case-study-card__tag">Urban Planning</div>
+                        <h3 class="case-study-card__title">Cool Roofs Program</h3>
+                        <p class="case-study-card__location">Multiple Cities</p>
+                    </div>
+                    <div class="case-study-card__content">
+                        <div class="case-study-card__impact">
+                            <span class="impact-number">2-5°C</span>
+                            <span class="impact-label">Indoor temperature reduction</span>
+                        </div>
+                        <p>Reflective white paint and innovative materials reducing indoor temperatures. From low-cost lime paint to ModRoof made from coconut husk and paper waste.</p>
+                        <div class="case-study-card__features">
+                            <span class="feature-tag">Low Cost</span>
+                            <span class="feature-tag">Energy Savings</span>
+                            <span class="feature-tag">Scalable</span>
+                        </div>
+                    </div>
+                    <div class="case-study-card__footer">
+                        <a href="#cool-roofs-details" class="btn btn--outline">View Details →</a>
+                    </div>
+                </article>
+
+                <!-- SEWA Community Resilience Case Study -->
+                <article class="case-study-card">
+                    <div class="case-study-card__header">
+                        <div class="case-study-card__tag">Community Interventions</div>
+                        <h3 class="case-study-card__title">SEWA Community Resilience</h3>
+                        <p class="case-study-card__location">Gujarat, Rajasthan, Maharashtra</p>
+                    </div>
+                    <div class="case-study-card__content">
+                        <div class="case-study-card__impact">
+                            <span class="impact-number">50,000</span>
+                            <span class="impact-label">Women covered by parametric insurance</span>
+                        </div>
+                        <p>Community-based heat resilience for informal women workers including parametric insurance, early warning systems, and heat safety training.</p>
+                        <div class="case-study-card__features">
+                            <span class="feature-tag">Parametric Insurance</span>
+                            <span class="feature-tag">Early Warning</span>
+                            <span class="feature-tag">Women-Focused</span>
+                        </div>
+                    </div>
+                    <div class="case-study-card__footer">
+                        <a href="#sewa-details" class="btn btn--outline">View Details →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blue-Green Infrastructure Showcase -->
+    <section class="section" style="background-color: var(--color-bg-section);" aria-labelledby="bgi-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="bgi-title">Blue-Green Infrastructure Solutions</h2>
+                <p class="hero__subtitle text-muted mb-0">
+                    Nature-based solutions providing multiple co-benefits for urban cooling and resilience.
+                </p>
+            </div>
+            
+            <div class="grid grid--2 gap-large">
+                <div>
+                    <h3 class="mb-6">Cooling Effectiveness</h3>
+                    <div class="bgi-stats grid--1 gap-medium">
+                        <div class="bgi-stat">
+                            <span class="bgi-stat__number">3-4°C</span>
+                            <span class="bgi-stat__label">City air temperature reduction from cool infrastructure</span>
+                        </div>
+                        <div class="bgi-stat">
+                            <span class="bgi-stat__number">4-5°C</span>
+                            <span class="bgi-stat__label">Surface temperature difference near water bodies and tree cover</span>
+                        </div>
+                        <div class="bgi-stat">
+                            <span class="bgi-stat__number">3°C</span>
+                            <span class="bgi-stat__label">Land surface temperature reduction in Palava City planned open spaces</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="mb-6">BGI Solution Types</h3>
+                    <div class="bgi-types grid--1 gap-small">
+                        <div class="bgi-type">
+                            <div class="bgi-type__icon">🌳</div>
+                            <div>
+                                <strong>Green Infrastructure</strong>
+                                <p>Parks, wetlands, green walls, street trees, botanical gardens</p>
+                            </div>
+                        </div>
+                        <div class="bgi-type">
+                            <div class="bgi-type__icon">💧</div>
+                            <div>
+                                <strong>Blue Infrastructure</strong>
+                                <p>Ponds, fountains, rivers, canals, artificial water features</p>
+                            </div>
+                        </div>
+                        <div class="bgi-type">
+                            <div class="bgi-type__icon">🏢</div>
+                            <div>
+                                <strong>Building Integration</strong>
+                                <p>Vegetated balconies, green roofs, vertical gardens</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight highlight--success mt-8">
+                <h4 class="text-green mb-4">Multiple Co-Benefits</h4>
+                <p class="mb-0">Beyond temperature reduction, BGI enhances biodiversity, improves air and water quality, manages stormwater, provides recreational spaces, and supports mental health and community well-being.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Guidance Section -->
+    <section class="section" aria-labelledby="guidance-title">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 id="guidance-title">From Knowledge to Action</h2>
+                <p class="hero__subtitle text-muted mb-0">
+                    Practical guidance for implementing heat resilience solutions at every scale.
+                </p>
+            </div>
+            
+            <div class="grid grid--4">
+                <div class="guidance-card">
+                    <div class="guidance-card__icon">🏠</div>
+                    <h4 class="guidance-card__title">Household Scale</h4>
+                    <ul class="guidance-card__list">
+                        <li>Cool roof materials and application</li>
+                        <li>Passive cooling design principles</li>
+                        <li>Energy-efficient appliances</li>
+                        <li>Water conservation strategies</li>
+                    </ul>
+                    <a href="#household-guide" class="btn btn--outline">Get Started →</a>
+                </div>
+
+                <div class="guidance-card">
+                    <div class="guidance-card__icon">👥</div>
+                    <h4 class="guidance-card__title">Community Scale</h4>
+                    <ul class="guidance-card__list">
+                        <li>Community awareness campaigns</li>
+                        <li>Collective cooling solutions</li>
+                        <li>Social safety nets design</li>
+                        <li>Resilience training programs</li>
+                    </ul>
+                    <a href="#community-guide" class="btn btn--outline">Get Started →</a>
+                </div>
+
+                <div class="guidance-card">
+                    <div class="guidance-card__icon">🏙️</div>
+                    <h4 class="guidance-card__title">City Scale</h4>
+                    <ul class="guidance-card__list">
+                        <li>Heat Action Plan development</li>
+                        <li>Urban planning integration</li>
+                        <li>Early warning systems</li>
+                        <li>Infrastructure adaptations</li>
+                    </ul>
+                    <a href="#city-guide" class="btn btn--outline">Get Started →</a>
+                </div>
+
+                <div class="guidance-card">
+                    <div class="guidance-card__icon">🌍</div>
+                    <h4 class="guidance-card__title">Ecosystem Scale</h4>
+                    <ul class="guidance-card__list">
+                        <li>Regional coordination frameworks</li>
+                        <li>Natural landscape conservation</li>
+                        <li>Cross-sector partnerships</li>
+                        <li>Knowledge sharing platforms</li>
+                    </ul>
+                    <a href="#ecosystem-guide" class="btn btn--outline">Get Started →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section" style="background-color: var(--color-bg-section);" aria-labelledby="cta-title">
+        <div class="container text-center">
+            <h2 id="cta-title">Ready to Implement Solutions?</h2>
+            <p class="hero__subtitle text-muted mb-8">
+                Access funding, connect with implementers, and join the community building heat resilience across Asia.
+            </p>
+            
+            <div class="flex flex--center gap-medium" style="flex-wrap: wrap;">
+                <a href="fund.html" class="btn btn--primary btn--large">Find Funding</a>
+                <a href="community.html" class="btn btn--secondary btn--large">Join Community</a>
+                <a href="policy.html" class="btn btn--outline btn--large">Policy Tools</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>BeatTheHeat<span class="text-heat">.Asia</span></h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">
+                        Orchestrating urban heat resilience through collective action, shared knowledge, and catalytic funding.
+                    </p>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Solution Categories</h3>
+                    <ul class="footer__links">
+                        <li><a href="#archetype-1">Urban Planning</a></li>
+                        <li><a href="#archetype-3">Health Protection</a></li>
+                        <li><a href="#archetype-5">Cooling Tech</a></li>
+                        <li><a href="#archetype-7">Early Warning</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Implementation</h3>
+                    <ul class="footer__links">
+                        <li><a href="#case-studies">Case Studies</a></li>
+                        <li><a href="#guidance-title">How-to Guides</a></li>
+                        <li><a href="fund.html">Funding Sources</a></li>
+                        <li><a href="policy.html">Policy Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Get Involved</h3>
+                    <ul class="footer__links">
+                        <li><a href="mailto:solutions@beattheheat.asia">Submit Solutions</a></li>
+                        <li><a href="community.html">Join Discussion</a></li>
+                        <li><a href="events.html">Attend Events</a></li>
+                        <li><a href="coalition.html">Partner With Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 BeatTheHeat.Asia. Collaborative platform for climate solutions. <a href="privacy.html" style="color: rgba(255, 255, 255, 0.8);">Privacy Policy</a> | <a href="terms.html" style="color: rgba(255, 255, 255, 0.8);">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav__toggle');
+            const navMenu = document.querySelector('.nav__menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    const isOpen = navMenu.classList.contains('nav__menu--open');
+                    navMenu.classList.toggle('nav__menu--open');
+                    navToggle.setAttribute('aria-expanded', !isOpen);
+                });
+            }
+            
+            // Filter functionality
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const solutionCards = document.querySelectorAll('.solution-card');
+            
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Update active tab
+                    filterTabs.forEach(t => {
+                        t.classList.remove('filter-tab--active');
+                        t.setAttribute('aria-selected', 'false');
+                    });
+                    this.classList.add('filter-tab--active');
+                    this.setAttribute('aria-selected', 'true');
+                    
+                    // Filter cards
+                    const filter = this.dataset.filter;
+                    solutionCards.forEach(card => {
+                        if (filter === 'all' || card.dataset.scale.includes(filter)) {
+                            card.style.display = 'block';
+                            card.style.opacity = '1';
+                        } else {
+                            card.style.display = 'none';
+                            card.style.opacity = '0';
+                        }
+                    });
+                });
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const navHeight = document.querySelector('.nav').offsetHeight;
+                        const ribbonHeight = document.querySelector('.heat-ribbon').offsetHeight;
+                        const offset = navHeight + ribbonHeight;
+                        
+                        window.scrollTo({
+                            top: target.offsetTop - offset,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
